@@ -4,7 +4,7 @@ Penguin can fly!
 Penguin can fly! is the book about story of Linux and Free Software, OpenSource
 movement in Gujarati.
 
-Patches and pull requests are most welcome!!
+Patches and pull requests are most welcome!!!
 
 પેંગ્વિન ઊડી શકે છે!
 ==============

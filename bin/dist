@@ -1,0 +1,47 @@
+#! /usr/bin/env node
+
+// Source: https://raw.github.com/learn-js/npm-recipes/master/bin/dist
+
+var convert = require('ebook-convert');
+
+var epub = convert({
+  source: 'Book.md',
+  target: 'dist/penguin-can-fly.epub',
+  arguments: [
+    ['--base-font-size', '10'],
+    ['--authors', 'Kartik Mistry'],
+    ['--extra-css', 'test.css']
+  ]
+});
+
+epub.on('end', function(){
+  console.log('We already did it! the epub file exists!')
+});
+
+var mobi = convert({
+  source: 'Book.md',
+  target: 'dist/penguin-can-fly.mobi',
+  arguments: [
+    ['--base-font-size', '10'],
+    ['--authors', 'Kartik Mistry'],
+    ['--extra-css', 'test.css']
+  ]
+});
+
+mobi.on('end', function(){
+  console.log('We already did it! the mobi file exists!')
+});
+
+var pdf = convert({
+  source: 'book.md',
+  target: 'dist/penguin-can-fly.pdf',
+  arguments: [
+    ['--base-font-size', '10'],
+    ['--authors', 'Kartik Mistry'],
+    ['--extra-css', 'test.css']
+  ]
+});
+
+pdf.on('end', function(){
+  console.log('Already did it! the pdf file exists!')
+});

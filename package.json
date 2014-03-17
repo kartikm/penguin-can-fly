@@ -1,0 +1,17 @@
+{
+  "name": "Penguin-can-fly",
+  "description": "Penguin can fly - the book",
+  "version": "0.0.1",
+  "repository": {
+    "url": "git@github.com:kartikm/penguin-can-fly.git"
+  },
+  "scripts": {
+    "compile": "./bin/compile",
+    "dist": "./bin/dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "manuscript-builder": "0.0.3",
+    "ebook-convert": "0.0.2"
+  }
+}

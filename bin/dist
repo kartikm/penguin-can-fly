@@ -15,7 +15,7 @@ var epub = convert({
 });
 
 epub.on('end', function(){
-  console.log('We already did it! the epub file exists!')
+  console.log('We already did it. The epub file exists!');
 });
 
 var mobi = convert({
@@ -29,7 +29,7 @@ var mobi = convert({
 });
 
 mobi.on('end', function(){
-  console.log('We already did it! the mobi file exists!')
+  console.log('We already did it. The mobi file exists!');
 });
 
 var pdf = convert({
@@ -43,5 +43,5 @@ var pdf = convert({
 });
 
 pdf.on('end', function(){
-  console.log('Already did it! the pdf file exists!')
+  console.log('Already did it. The pdf file exists!');
 });

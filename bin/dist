@@ -2,15 +2,19 @@
 
 // Source: https://raw.github.com/learn-js/npm-recipes/master/bin/dist
 
+var fs = require('fs');
+var marked = require('marked');
 var convert = require('ebook-convert');
 
+var md = fs.readFileSync('Book.md', 'utf8');
+fs.writeFileSync('dist/penguin-can-fly.html', marked(md));
+
 var epub = convert({
-  source: 'Book.md',
+  source: 'dist/penguin-can-fly.html',
   target: 'dist/penguin-can-fly.epub',
   arguments: [
     ['--base-font-size', '10'],
-    ['--authors', 'Kartik Mistry'],
-    ['--extra-css', 'test.css']
+    ['--authors', 'Kartik Mistry']
   ]
 });
 
@@ -19,12 +23,11 @@ epub.on('end', function(){
 });
 
 var mobi = convert({
-  source: 'Book.md',
+  source: 'dist/penguin-can-fly.html',
   target: 'dist/penguin-can-fly.mobi',
   arguments: [
     ['--base-font-size', '10'],
-    ['--authors', 'Kartik Mistry'],
-    ['--extra-css', 'test.css']
+    ['--authors', 'Kartik Mistry']
   ]
 });
 
@@ -33,15 +36,14 @@ mobi.on('end', function(){
 });
 
 var pdf = convert({
-  source: 'book.md',
+  source: 'dist/penguin-can-fly.html',
   target: 'dist/penguin-can-fly.pdf',
   arguments: [
     ['--base-font-size', '10'],
-    ['--authors', 'Kartik Mistry'],
-    ['--extra-css', 'test.css']
+    ['--authors', 'Kartik Mistry']
   ]
 });
 
 pdf.on('end', function(){
-  console.log('Already did it. The pdf file exists!');
+  console.log('We already did it. The pdf file exists!');
 });

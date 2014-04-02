@@ -2,14 +2,14 @@
 
 // Source: https://raw.github.com/learn-js/npm-recipes/master/bin/compile
 
-var ReadmeBuilder = require('manuscript-builder');
+var ReadmeBuilder = require( 'manuscript-builder' );
 
-var readme = new ReadmeBuilder({
-  target: '/Book.md',
-  bookDir: '/Chapters/',
-  tableOfContents: '/Chapters/Book.txt'
-});
+var readme = new ReadmeBuilder( {
+	target: '/Book.md',
+	bookDir: '/Chapters/',
+	tableOfContents: '/Chapters/Book.txt'
+} );
 
 readme.build();
 
-console.log('Creating Book.md');
+console.log( 'Creating Book.md' );

@@ -5,12 +5,13 @@
   "repository": {
     "url": "git@github.com:kartikm/penguin-can-fly.git"
   },
+  "license": "MIT",
   "scripts": {
     "compile": "./bin/compile",
     "dist": "./bin/dist"
   },
   "dependencies": {
-      "marked": "^0.3.2"
+    "marked": "^0.3.2"
   },
   "devDependencies": {
     "manuscript-builder": "0.0.3",

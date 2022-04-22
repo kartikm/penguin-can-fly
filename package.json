@@ -11,7 +11,7 @@
     "dist": "./bin/dist"
   },
   "dependencies": {
-    "marked": "^0.3.2"
+    "marked": "^4.0.10"
   },
   "devDependencies": {
     "manuscript-builder": "0.0.3",
